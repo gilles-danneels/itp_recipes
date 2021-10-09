@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -21,21 +19,21 @@ const Home = () => {
       <div id="catergory" className={styles.category_page} $>
         <h1>Categories</h1>
         <div className={styles.category_types}>
-          <Link href="/vegan">
+          <Link href="/vegan" key="vegan">
             <div className={styles.wrapper_category_card}>
               <div  className={`${styles["category_card"]} ${styles["vegan_category_card"]}`}>
                 <h2>Vegan recipes</h2>
               </div>
             </div>
           </Link>
-          <Link href="/veggie">
+          <Link href="/veggie" key="veggie">
             <div className={styles.wrapper_category_card}>
               <div  className={`${styles["category_card"]} ${styles["veggie_categroy_card"]}`}>
                 <h2>Veggie recipes</h2>
               </div>
             </div>
           </Link>
-          <Link href="/meat">
+          <Link href="/meat" key="meat">
             <div className={styles.wrapper_category_card}>
               <div  className={`${styles["category_card"]} ${styles["meat_categroy_card"]}`}>
               <h2>Meat recipes</h2>
