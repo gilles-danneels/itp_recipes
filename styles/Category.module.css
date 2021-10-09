@@ -29,6 +29,97 @@
     background: rgba(158, 158, 158, 0.8);
     margin-bottom: 50px;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "title title prep"
+    "info info prep"
+    "ingr ingr prep"
+    "ingr ingr prep"
+    "ingr ingr prep"
+    "ingr ingr prep"
+    "img . prep"
+    "img . prep"
+    ;
+}
+
+.recipe_card > *{
+    height: 100%;
+}
+
+.recipe_card h1{
+    grid-area: title;
+    margin: 0 0 0 45px;
+    display: grid;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 2px gray;
+    height: 100%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: info;
+    /* background: red; */
+    height: 100%;
+    margin: 0;
+    margin: 0 0 0 45px;
+}
+
+.info p {
+    margin: 0;
+    height: 100%;
+    color: white;
+}
+
+.ingredients {
+    grid-area: ingr;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 0 20px 0 20px;
+    margin: 0 25px 0 45px;
+    border-radius: 10px;
+    background: rgba(65, 65, 65, 0.8);
+}
+
+.ingredients h1{
+    margin: 20px 0 0 0;
+    text-shadow: none;
+    font-size: 1.4em;
+}
+
+.ingredients p{
+    padding: 0 20px;
+}
+
+
+.recipe_card img {
+    grid-area: img;
+    background: purple;
+}
+
+.prep_desc {
+    color: white;
+    grid-area: prep;
+    background: rgba(65, 65, 65, 0.8);
+    margin: 20px 20px 0 0;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    max-height: 61.5vh;
+}
+
+.prep_desc h1{
+    margin: 20px 0 10px 0;
+    text-shadow: none;
+    font-size: 1.4em;
+}
+
+.prep_desc p {
+    padding: 0 20px;
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .container {
