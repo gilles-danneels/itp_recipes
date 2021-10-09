@@ -1,0 +1,37 @@
+.wrapper_ingredients_page {
+    background: url("/images/bg_for_recipes.jpeg");
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content_recipes {
+    position: static;
+}
+
+
+.title {
+    color: pink;
+    margin: 30px 0 0 55px;
+    padding: 0 0 20px 0;
+    border-bottom: 4px solid pink;
+    width: 90vw;
+    font-size: 2.8em;
+    text-shadow: 1px 2px green;
+}
+
+.recipe_card {
+    width: 85vw;
+    height: 70vh;
+    background: rgba(158, 158, 158, 0.8);
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.container {
+    margin: 50px auto 0 auto;
+    width: 85vw;
+}
