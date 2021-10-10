@@ -5,7 +5,6 @@ import { allRecipeTypes } from "../lib/api"
 const Home = ({ types }) => {
   return (
     <div className={styles.container}>
-      {console.log(types)}
       <div className={styles.wrapper_front_page} >
         <div className={styles.content_wrapper}>
           <div className={styles.upper_part}>
@@ -26,7 +25,6 @@ const Home = ({ types }) => {
               types.map(type => (
                 <Link href={`/${type.typeName}`} key={`${type.typeName}`}>
                   <div className={styles.wrapper_category_card}>
-                    {console.log(type.typeName)}
                     <div className={`${styles["category_card"]} ${styles[`${type.typeName}_category_card`]}`}>
                       <h2>{type.typeName} recipes</h2>
                     </div>

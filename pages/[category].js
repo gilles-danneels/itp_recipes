@@ -15,7 +15,6 @@ const CategoryDishes = ({ recipes }) => {
         <div className={styles.ontent_recipes}>
           <h1 className={styles.title}>{category} recipes</h1>
           <div className={styles.container}>
-            {/* load data from datocms */}
             {recipes.map((recipe) => (
               <div className={styles.recipe_card}>
                 <h1 className={styles.recipe_title}>{recipe.title}</h1>
