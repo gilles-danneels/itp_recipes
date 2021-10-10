@@ -101,7 +101,7 @@
   box-shadow: 2px 4px gray;
 }
 
-.veggie_categroy_card {
+.veggie_category_card {
   background: url("/images/vegitarian_card.jpeg");
   background-size: cover;
   background-position: center;
@@ -116,7 +116,7 @@
   background-repeat: no-repeat;
 }
 
-.meat_categroy_card {
+.meat_category_card {
   background: url("/images/meat_card.jpeg");
   background-size: cover;
   background-position: center;

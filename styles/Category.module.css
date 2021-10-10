@@ -1,5 +1,5 @@
 .wrapper_ingredients_page {
-    background: url("/images/bg_for_recipes.jpeg");
+    background: url("/images/recipe_bg.jpg");
     width: 100vw;
     min-height: 100vh;
     position: absolute;
@@ -15,10 +15,11 @@
 
 
 .title {
-    color: pink;
+    color: white;
     margin: 30px 0 0 55px;
     padding: 0 0 20px 0;
-    border-bottom: 4px solid pink;
+    border-bottom: 4px solid white;
+    box-shadow: 0px 3px green;
     width: 90vw;
     font-size: 2.8em;
     text-shadow: 1px 2px green;
@@ -26,7 +27,7 @@
 
 .recipe_card {
     width: 85vw;
-    height: 70vh;
+    height: 75vh;
     background: rgba(158, 158, 158, 0.8);
     margin-bottom: 50px;
     border-radius: 20px;
@@ -39,8 +40,8 @@
     "ingr ingr prep"
     "ingr ingr prep"
     "ingr ingr prep"
-    "img . ."
-    "img . ."
+    ". . ."
+    ". . ."
     ;
 }
 
@@ -108,7 +109,7 @@
     margin: 20px 20px 0 0;
     padding: 0 20px 0 20px;
     border-radius: 10px;
-    max-height: 64.5vh;
+    /* min-height: 61.5vh; */
     height: 100%;
 }
 
@@ -127,4 +128,45 @@
 .container {
     margin: 50px auto 0 auto;
     width: 85vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 2.3em;
+        width: 93vw;
+        margin: 20px 0 5px 15px;
+        padding: 10px;
+        background: rgba(158, 158, 158, 0.8);
+        border-radius: 5px;
+    }
+
+    .recipe_card {
+        grid-template-areas: 
+            "title title title"
+            "info info info"
+            "ingr ingr ingr"
+            "ingr ingr ingr"
+            "prep prep prep"
+            "prep prep prep"
+            ". . ."
+            ". . ."
+            ;
+        box-sizing: border-box;
+        min-width: fit-content;
+        min-height: 250vh;
+    }
+
+    .recipe_card .recipe_title {
+        font-size: 1.3em;
+        margin: 5px 5px 30px 15px;
+    }
+
+    .info {
+        margin: 0 0 20px 30px;
+    }
+
+    .prep_desc {
+        margin: 20px 25px 0 45px;
+        height: fit-content;
+    }
 }
