@@ -7,16 +7,17 @@ const Home = () => {
       <div className={styles.wrapper_front_page} >
         <div className={styles.content_wrapper}>
         <div className={styles.upper_part}>
-          <h1>Recepten</h1>
+          <h1>Best recipes</h1>
           <p>By Gilles Danneels</p>
         </div>
         <div className={styles.lower_part}>
-          <a href="#catergory"><button className={styles.read_more_btn}>Lees meer</button></a>
+          <a href="#catergory"><button className={styles.read_more_btn}>Read more</button></a>
         </div>
        </div>
       </div>
 
       <div id="catergory" className={styles.category_page} $>
+        <div className={styles.wrapper_category_page_content}>
         <h1>Categories</h1>
         <div className={styles.category_types}>
           <Link href="/vegan" key="vegan">
@@ -41,6 +42,8 @@ const Home = () => {
             </div>
           </Link>
         </div>
+        </div>
+        
       </div>
     </div>
     
