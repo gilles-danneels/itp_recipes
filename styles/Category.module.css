@@ -135,11 +135,11 @@
 }
 
 .home_btn {
-    position: absolute;
+    position: fixed;
     height: 60px;
     width: 60px;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 30px;
     background-color: green;
     border-radius: 30px;
     display: grid;
@@ -206,5 +206,10 @@
         height: fit-content;
         overflow-y: scroll;
         height: 80%;
+    }
+
+    .home_btn {
+        right: 10px;
+        bottom: 10px;
     }
 }

@@ -42,12 +42,13 @@ const CategoryDishes = ({ recipes }) => {
               </div>
             ))
             }
-            <div className={styles.home_btn}>
-              <a href="/"><FontAwesomeIcon icon={faHome} className={styles.home_icon}/></a>
-            </div>
+            
           </div>
         </div>
       </div>
+      <div className={styles.home_btn}>
+              <a href="/"><FontAwesomeIcon icon={faHome} className={styles.home_icon}/></a>
+            </div>
     </>
   )
 }
