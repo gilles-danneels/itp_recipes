@@ -84,6 +84,8 @@
     margin: 0 25px 0 45px;
     border-radius: 10px;
     background: rgba(65, 65, 65, 0.8);
+    overflow-y: scroll;
+    height: 93%;
 }
 
 .ingredients h1{
@@ -110,7 +112,9 @@
     padding: 0 20px 0 20px;
     border-radius: 10px;
     /* min-height: 61.5vh; */
-    height: 100%;
+    height: 92%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
 }
 
 .prep_desc h1{
@@ -145,15 +149,15 @@
             "title title title"
             "info info info"
             "ingr ingr ingr"
-            "ingr ingr ingr"
-            "prep prep prep"
+            
             "prep prep prep"
             ". . ."
             ". . ."
             ;
+        grid-template-rows: 80px 50px ;
         box-sizing: border-box;
         min-width: fit-content;
-        min-height: 250vh;
+        
     }
 
     .recipe_card .recipe_title {
@@ -162,11 +166,19 @@
     }
 
     .info {
-        margin: 0 0 20px 30px;
+        margin: 0 0 0 30px;
+        max-height: 0;
     }
+
+    .ingredients{
+        height: 90%;
+        overflow-y: scroll;
+    } 
 
     .prep_desc {
         margin: 20px 25px 0 45px;
         height: fit-content;
+        overflow-y: scroll;
+        height: 80%;
     }
 }
