@@ -153,8 +153,8 @@
 }
 
 .home_btn:hover {
-    bottom: 48px;
-    right: 48px;
+    bottom: 18px;
+    right: 28px;
     box-shadow: 2px 4px gray;
     transition: all ease 500ms;
     cursor: pointer;
@@ -211,5 +211,10 @@
     .home_btn {
         right: 10px;
         bottom: 10px;
+    }
+
+    .home_btn:hover {
+        right: 8px;
+        bottom: 8px;
     }
 }
