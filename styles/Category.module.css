@@ -134,6 +134,32 @@
     width: 85vw;
 }
 
+.home_btn {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    right: 50px;
+    background-color: green;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    transition: all ease 500ms;
+}
+
+.home_icon {
+    color: white;
+    font-size: 1.6em
+}
+
+.home_btn:hover {
+    bottom: 48px;
+    right: 48px;
+    box-shadow: 2px 4px gray;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .title {
         font-size: 2.3em;

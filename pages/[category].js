@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import styles from '../styles/Category.module.css'
 import { allRecipes, recipesByType } from "../lib/api"
+import Link from 'next/link'
 
 const CategoryDishes = ({ recipes }) => {
   const router = useRouter()
@@ -41,6 +42,9 @@ const CategoryDishes = ({ recipes }) => {
               </div>
             ))
             }
+            <div className={styles.home_btn}>
+              <a href="/"><FontAwesomeIcon icon={faHome} className={styles.home_icon}/></a>
+            </div>
           </div>
         </div>
       </div>
